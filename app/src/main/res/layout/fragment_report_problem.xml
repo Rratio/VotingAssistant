@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="minorproject.votingassistant.ReportProblem">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/problem"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="top|left"
+        android:includeFontPadding="true"
+        android:padding="5dp"
+        android:inputType="text"
+        android:maxLines="5"
+        android:maxLength="160"
+        android:background="@drawable/edittext"
+        android:layout_below="@+id/pname"/>
+
+
+
+    <Button
+        android:id="@+id/report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/invalidbutton"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_below="@+id/instruct"
+        android:layout_centerHorizontal="true" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="minorproject.votingassistant.Login">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinputnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="120dp"
+        android:padding="10dp">
+
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:paddingBottom="15dp"
+        android:textSize="16dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="VERIFY"
+        android:background="@drawable/invalidbutton"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textinputnumber"
+        android:layout_alignEnd="@+id/textinputnumber" />
+
+
+</RelativeLayout>

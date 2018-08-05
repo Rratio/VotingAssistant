@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/add_election"
+            android:icon="@drawable/ic_note_add_black_24dp"
+            android:title="Add Election" />
+        <item
+            android:id="@+id/rule_book"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="Rule Book" />
+        <item
+            android:id="@+id/report_problem"
+            android:icon="@drawable/ic_report_problem_black_24dp"
+            android:title="Report Problem" />
+    </group>
+
+
+
+</menu>

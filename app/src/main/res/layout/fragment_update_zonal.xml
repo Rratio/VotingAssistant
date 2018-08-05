@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="minorproject.votingassistant.SDMJava.UpdateZonal">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Spinner
+        android:id="@+id/zonalupdatearea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spinnertopmargin"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="@dimen/spinnerrightargin"/>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinputzonalname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zonalupdatearea"
+        android:layout_marginTop="@dimen/textinputtop"
+        android:layout_marginRight="@dimen/textinputright"
+        android:layout_marginLeft="@dimen/textinputleft"
+        android:padding="@dimen/textinputpadding">
+
+        <EditText
+            android:id="@+id/zonalname"
+            android:hint="Zonal Name"
+            android:textSize="@dimen/textsize"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/edittextbottompadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinputzonalnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textinputzonalname"
+        android:layout_marginTop="@dimen/textinputtop"
+        android:layout_marginRight="@dimen/textinputright"
+        android:layout_marginLeft="@dimen/textinputleft"
+        android:padding="@dimen/textinputpadding">
+
+        <EditText
+            android:id="@+id/zonalnumber"
+            android:hint="Zonal Mobile Number"
+            android:textSize="@dimen/textsize"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/edittextbottompadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/updatezonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:background="@drawable/invalidbutton"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textinputzonalnumber"
+        android:layout_alignRight="@+id/textinputzonalnumber"
+        android:layout_alignEnd="@+id/textinputzonalnumber"
+        android:layout_marginTop="25dp" />
+
+</RelativeLayout>

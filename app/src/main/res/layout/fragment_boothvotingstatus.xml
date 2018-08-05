@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="minorproject.votingassistant.ZonalJava.Boothvotingstatus">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp">
+        <TextView
+            android:id="@+id/overallvote"
+            android:layout_marginTop="@dimen/spinnertopmargin"
+            android:layout_marginLeft="@dimen/spinnerleftmargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booth Overall Voting ="
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/votes"
+            android:layout_marginTop="@dimen/spinnertopmargin"
+            android:layout_marginLeft="@dimen/spinnerleftmargin"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/percentage"
+            android:layout_marginTop="@dimen/spinnertopmargin"
+            android:text=" %"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="@dimen/spinnerleftmargin"
+        android:clickable="true">
+        <TextView
+            android:id="@+id/boothperclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Here To Check Boothwise Voting Status"
+            android:layout_marginTop="@dimen/spinnertopmargin"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
+        
+
+</LinearLayout>
+</LinearLayout>

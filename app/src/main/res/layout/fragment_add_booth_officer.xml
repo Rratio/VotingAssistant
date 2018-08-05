@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="minorproject.votingassistant.ZonalJava.AddBoothOfficer"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Spinner
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/spinnerrightargin"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="@dimen/spinnertopmargin"
+        android:id="@+id/spinner"/>
+
+
+    -<android.support.design.widget.TextInputLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginRight="@dimen/textinputright"
+    android:layout_marginLeft="@dimen/textinputleft"
+    android:layout_marginTop="@dimen/textinputtop"
+    android:id="@+id/textinputname"
+    android:padding="@dimen/textinputpadding"
+    android:layout_below="@+id/spinner">
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/boothname"
+        android:paddingBottom="@dimen/edittextbottompadding"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textSize="@dimen/textsize"
+        android:hint="Booth Officer Name"/>
+
+</android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginRight="@dimen/textinputright"
+    android:layout_marginLeft="@dimen/textinputleft"
+    android:layout_marginTop="@dimen/textinputtop"
+    android:id="@+id/textinputnumber"
+    android:padding="@dimen/textinputpadding"
+    android:layout_below="@+id/textinputname">
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/boothnumber"
+        android:paddingBottom="@dimen/edittextbottompadding"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="number"
+        android:textSize="@dimen/textsize"
+        android:hint="Booth Officer Mobile Number"/>
+
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/textinputright"
+        android:layout_marginLeft="@dimen/textinputleft"
+        android:layout_marginTop="@dimen/textinputtop"
+        android:id="@+id/textinputseats"
+        android:padding="@dimen/textinputpadding"
+        android:layout_below="@+id/textinputnumber">
+
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/totalseats"
+            android:paddingBottom="@dimen/edittextbottompadding"
+            android:maxLines="1"
+            android:inputType="number"
+            android:textSize="@dimen/textsize"
+            android:hint="Total Seats"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/addbooth"
+        android:layout_below="@+id/textinputseats"
+        android:layout_alignEnd="@+id/textinputnumber"
+        android:layout_alignRight="@+id/textinputnumber"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/invalidbutton"
+        android:text="ADD"/>
+    </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

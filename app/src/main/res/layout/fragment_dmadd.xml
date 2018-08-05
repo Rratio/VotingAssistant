@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/DMaddLayout"
+    tools:context="minorproject.votingassistant.ECJava.DMAdd">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Spinner
+        android:id="@+id/district"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/spinnertopmargin"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="@dimen/spinnerrightargin"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinputname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/district"
+        android:layout_marginTop="@dimen/textinputtop"
+        android:layout_marginRight="@dimen/textinputright"
+        android:layout_marginLeft="@dimen/textinputleft"
+        android:padding="@dimen/textinputpadding">
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="DM Name"
+            android:textSize="@dimen/textsize"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/edittextbottompadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textinputnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textinputname"
+        android:layout_marginTop="@dimen/textinputtop"
+        android:layout_marginRight="@dimen/textinputright"
+        android:layout_marginLeft="@dimen/textinputleft"
+        android:padding="@dimen/textinputpadding">
+
+        <EditText
+            android:id="@+id/number"
+            android:hint="DM Mobile Number"
+            android:textSize="@dimen/textsize"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:paddingBottom="@dimen/edittextbottompadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/addDM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:background="@drawable/invalidbutton"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textinputnumber"
+        android:layout_alignRight="@+id/textinputnumber"
+        android:layout_alignEnd="@+id/textinputnumber"
+        android:layout_marginTop="25dp" />
+
+</RelativeLayout>
